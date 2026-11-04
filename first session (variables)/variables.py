@@ -5,7 +5,7 @@ if (programm == 1):
     print("-----------first programm running1-----------")
     name = input("Enter Your name: ")
     year_of_birth = int(input("Enter Your Year of birth: "))
-    height = int(input("Enter Your Height: "))
+    height = float(input("Enter Your Height: "))
     age = 1405 - year_of_birth
 
     print("---------------------------------------------")
@@ -16,7 +16,7 @@ if (programm == 1):
     print("---------------------------------------------")
 else:
     print("-----------second programm running-----------")
-    salary = int(input("Enter Your Salary: "))
+    salary = float(input("Enter Your Salary: "))
     
     insurance = salary * 0.07
     salary_after_insurance = salary - insurance
