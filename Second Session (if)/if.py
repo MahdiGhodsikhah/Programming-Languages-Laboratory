@@ -75,4 +75,13 @@ match programm:
                 print("Ticket price is 70_000 ")
         else:
             print("please enter valid age")
-            
+    case 6:
+        year = int(input("Enter a year: "))
+        if year % 400 == 0:
+            print("Leap Year")
+        elif year % 100 == 0:
+            print("Not a Leap Year")
+        elif year % 4 == 0:
+            print("Leap Year")
+        else:
+            print("Not a Leap Year")
