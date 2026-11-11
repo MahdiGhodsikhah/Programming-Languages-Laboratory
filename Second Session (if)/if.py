@@ -13,3 +13,12 @@ match programm:
                 print(f"your score {score}- kharab kardi pesar jan.")
         else:
             print("the entry is out of range")
+    case 2:
+        age = int(input("Enter your age: "))
+        li = input("do you have lisence (y/n): ") == 'y'
+        isdrunk = input("Are you drunk (y/n): ") == 'y'
+        
+        if (age >= 18 and li and not isdrunk):
+            print("you can drive 😁")
+        else:
+            print("you can't drive 😅")
