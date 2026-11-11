@@ -1,4 +1,4 @@
-programm = int(input("Enter 1 for first programm (Score) or Enter 2 for second programm (Drive): "))
+programm = int(input("Enter 1 or 2 or 3 or 4 or 5 or 6 or 7: "))
 match programm:
     case 1:
         score = float(input("Enter your Score number: "))
@@ -46,3 +46,19 @@ match programm:
             elif (tier == 'bronze'):
                 amount *= 0.90
                 print(f"you have 10% off and you should pay {amount}")
+    case 4:
+        number = int(input("Enter a number: "))
+        if number == 0:
+            print("Your number is Zero")
+        elif number > 0:
+            print(f"{number} is Positive")
+            if number % 2 == 0 :
+                print(f"{number} is Even")
+            else:
+                print(f"{number} is Odd")
+        else:
+            print(f"{number} is Negative")
+            if number % 2 == 0:
+                print(f"{number} is Even")
+            else:
+                print(f"{number} is Odd")
