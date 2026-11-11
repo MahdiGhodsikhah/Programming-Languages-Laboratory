@@ -62,3 +62,17 @@ match programm:
                 print(f"{number} is Even")
             else:
                 print(f"{number} is Odd")
+    case 5:
+        age = int(input("Enter your age: "))
+        if age > 0:
+            if age <= 5:
+                print("Ticket price is free ")
+            elif age <= 18:
+                print("Ticket price is 50_000 ")
+            elif age <= 60:
+                print("Ticket price is 100_000 ")
+            else:
+                print("Ticket price is 70_000 ")
+        else:
+            print("please enter valid age")
+            
