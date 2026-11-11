@@ -22,3 +22,27 @@ match programm:
             print("you can drive 😁")
         else:
             print("you can't drive 😅")
+    case 3:
+        amount = float(input("How much did you buy ? "))
+        tier = input("enter your tier (gold / silver / bronze)").lower()
+        
+        if (amount < 10_000_000):
+            if (tier == 'gold'):
+                amount *= 0.85
+                print(f"you have 15% off and you should pay {amount}")
+            elif (tier == 'silver'):
+                amount *= 0.90
+                print(f"you have 10% off and you should pay {amount}")
+            elif (tier == 'bronze'):
+                amount *= 0.95
+                print(f"you have 5% off and you should pay {amount}")
+        else:
+            if (tier == 'gold'):
+                amount *= 0.80
+                print(f"you have 20% off and you should pay {amount}")
+            elif (tier == 'silver'):
+                amount *= 0.85
+                print(f"you have 15% off and you should pay {amount}")
+            elif (tier == 'bronze'):
+                amount *= 0.90
+                print(f"you have 10% off and you should pay {amount}")
