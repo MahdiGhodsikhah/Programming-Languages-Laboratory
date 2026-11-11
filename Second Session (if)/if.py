@@ -85,3 +85,16 @@ match programm:
             print("Leap Year")
         else:
             print("Not a Leap Year")
+    case 7:
+        salary = int(input("Enter your salary: "))
+        child = input("Do you have a child? (y/n): ")
+        if salary <= 10_000_000:
+            tax = 0
+        elif salary <= 25_000_000:
+            tax = (salary - 10_000_000) * 0.10
+        else:
+            tax = (15_000_000 * 0.10) + ((salary - 25_000_000) * 0.20)
+        if child == "y":
+            tax -= 500_000
+        print("Your tax is:", tax)
+        print("Your final salary is:", salary - tax)
