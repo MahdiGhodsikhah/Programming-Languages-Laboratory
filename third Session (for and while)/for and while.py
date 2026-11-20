@@ -56,6 +56,15 @@ match programm:
                 break
             else:
                 print("invalid")
-    #
+    #Factorial
     case 4:
+        number = int(input("enter a number: "))
+        factorial = 1
+        if number > 0:
+            for i in range(1, number + 1):
+                factorial *= i
+            print(f"factorial {number} is: {factorial}")
+        else:
+            print("please enter a positive number!")
+    case 5:
         
