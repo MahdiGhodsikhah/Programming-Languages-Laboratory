@@ -31,3 +31,4 @@ else:
     print(f"|\tTax (9%): {tax}")
     print(f"|\tFinal Salary: {final_salary}")
     print("---------------------------------------------")
+    
