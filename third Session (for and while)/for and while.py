@@ -85,4 +85,42 @@ match programm:
                     break
             else:
                 print("This number is prime!")
+    case 7:
+        balance = 1_000_000
+        while True:
+            print()
+            print("1. check balance")
+            print("2. withdraw money")
+            print("3. deposit money")
+            print("4. exit")
 
+            choice = int(input("choose option (1-4):"))
+            if choice == 1:
+                print(f"your balance is : {balance} toman")
+            
+            elif choice == 2:
+                amount = int(input("enter withdrawal amount: "))
+                if amount <= 0:
+                    print("invalid amount!")
+                    continue
+                if amount > balance:
+                    print(f"you dont have {amount} money")
+                else:
+                    balance -= amount
+                    print("withdrawal successful!")
+                    print(f"new balance: {balance} Toman")
+            elif choice == 3:
+                amount = int(input("enter deposit amount: "))
+                if amount <= 0:
+                    print("invalid amount!")
+                    continue
+                balance += amount
+                print("deposit successful!")
+                print(f"new balance: {balance} Toman")
+
+            elif choice == 4:
+                print("Thank you")
+                break
+            else:
+                print("Invalid choice!")
+                continue
