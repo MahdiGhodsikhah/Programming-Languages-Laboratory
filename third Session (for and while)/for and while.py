@@ -75,4 +75,14 @@ match programm:
             if i % 3 == 0:
                 print(i)
     case 6:
-        
+        number = int(input("enter a number: "))
+        if number < 2:
+            print("number is not prime.")
+        else:
+            for i in range(2, number):
+                if number % i == 0:
+                    print("number is not prime.")
+                    break
+            else:
+                print("This number is prime!")
+
