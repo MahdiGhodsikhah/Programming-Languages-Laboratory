@@ -18,4 +18,42 @@ match programm:
         my_tuple_len = len(my_tuple)
         print(my_tuple_count)
         print(my_tuple_len)
+    case 4:
+        cart_items = []
+        cart_prices = []
+        while True:
+            print("1. Add Product")
+            print("2. Remove Product")
+            print("3. Show Cart")
+            print("4. Print Invoice")
+            print("5. Exit")
+            choice = int(input("Choose an opion: "))
+
+            if choice == 1:
+                item = input("Enter product name: ")
+                price = int(input("Etner product price: "))
+                cart_items.append(item)
+                cart_prices.append(price)
+                print("successfully")
+            elif choice == 2:
+                name = input("Enter product name to remove: ")
+                if name in cart_items :
+                    index = cart_items.index(name)
+                    cart_items.pop(index)
+                    cart_prices.pop(index)
+                    print(name, "removed successfully!")
+                else:
+                    print("Product not found!")
+            elif choice == 3:
+                for i in range(len(cart_items)):
+                    print(cart_items[i], "-", cart_prices[i])
+            elif choice == 4:
+                total = sum(cart_prices)
+                final_price = total * 1.09
+                for i in range(len(cart_items)):
+                    print(cart_items[i], "-", cart_prices[i])
+                print("Final Price:", final_price)
+            elif choice == 5:
+                print("Goodbye!")
+                break
     
