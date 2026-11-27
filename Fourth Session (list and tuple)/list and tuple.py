@@ -56,4 +56,17 @@ match programm:
             elif choice == 5:
                 print("Goodbye!")
                 break
+    case 5:
+        my_number_list = []
+        while True:
+            number = input("Enter a number: or write e to exit: ")
+            if number == "e":
+                break
+            else:
+                my_number_list.append(int(number))
+        print("Original List:", my_number_list)
+        choice = int(input("Enter rotation number: "))
+        choice = choice % len(my_number_list)
+        new_number = my_number_list[-choice:] + my_number_list[:-choice]
+        print("New List:", new_number)
     
