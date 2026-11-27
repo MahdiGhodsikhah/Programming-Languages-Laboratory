@@ -12,4 +12,10 @@ match programm:
         brands.remove("Puma")
         brands.extend(["1", "2"])
         print(brands)
+    case 3:
+        my_tuple = (1, "Mahdi", False, 1)
+        my_tuple_count = my_tuple.count(1)
+        my_tuple_len = len(my_tuple)
+        print(my_tuple_count)
+        print(my_tuple_len)
     
